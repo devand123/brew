@@ -20,27 +20,29 @@ angular.module('brew')
 
 		self.getBeerDetail = function (id) {
 			var def = $q.defer();
-			// if searchResults does not exist, return empty object
-			if(!self.repo.searchResults || !self.repo.searchResults.length) {
-				if($window.localStorage.drinkHistory) {
-					self.getFromDrinkHistory(id)
-						.then(function (record) {
-							if(record) {
-								def.resolve(record);
-							}
-						});
-				} else {
-					return $q.when({});
-				}
-			} else {
-				// loop through all search results, and find matching result per the id parameter
-				angular.forEach(self.repo.searchResults, function (result) {
-					if(result.id === id) {
-						def.resolve(result);
-					}
-				});
-			}
 
+			// try to get from drinkHistory first
+			if($window.localStorage.drinkHistory) {
+				self.getFromDrinkHistory(id)
+					.then(function (record) {
+						if(record) {
+							def.resolve(record);
+						} else {
+							// if no record, let's try to get from searchResults if they exist
+							if(self.repo.searchResults && self.repo.searchResults.length) {
+								angular.forEach(self.repo.searchResults, function (result) {
+									if(result.id === id) {
+										def.resolve(result);
+									}
+								});
+							} else {
+								// otherwise just return an empty object
+								def.resolve({});
+							}
+						}
+					});
+			}
+			
 			return def.promise;
 		};
 
@@ -90,6 +92,7 @@ angular.module('brew')
 							record = drink;
 						}
 					});
+					console.log('getFromDrinkHistory', record);
 					def.resolve(record);
 				});
 
