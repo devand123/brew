@@ -1,0 +1,20 @@
+<ion-view>
+  <ion-header-bar class="bar-stable">
+    <h1 class="title">Beers You've Drank</h1>
+  </ion-header-bar>
+
+  <ion-content class="has-header">
+    <div class="padding">
+      <p ng-if="!drinkHistory.length && called">No drink history. Go <a href="#/dash/search">search</a> for some beers!</p>
+
+      <div ng-if="drinkHistory.length" class="list">
+          <a ng-repeat="beer in drinkHistory" class="item item-thumbnail-left" href="#/dash/beer-detail/{{beer.id}}">
+            <img ng-src="{{beer.labels.medium}}">
+            <h2>{{beer.name}} ({{beer.abv}}% abv)</h2>
+            <p>{{beer.description}}</p>
+          </a>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-view>

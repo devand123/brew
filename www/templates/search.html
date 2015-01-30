@@ -1,0 +1,28 @@
+<ion-view>
+  <form ng-submit="searchBeer()">
+    <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios7-search placeholder-icon"></i>
+        <input type="search" ng-model="beerName" placeholder="Enter name of your beer">
+      </label>
+      <button class="button" 
+              ng-class="{'button-clear': !beerName.length, 'button-clear button-positive': beerName.length}">
+        search
+      </button>
+    </div>
+  </form>
+
+  <ion-content class="has-header">
+    <div class="padding">
+      <p ng-if="!results.length && called">No results</p>
+
+      <div ng-if="results.length" class="list">
+          <a ng-repeat="beer in results" class="item item-thumbnail-left" href="#/dash/beer-detail/{{beer.id}}">
+            <img ng-src="{{beer.labels.medium}}">
+            <h2>{{beer.name}} <span ng-if="beer.abv">({{beer.abv}}% abv)</span></h2>
+            <p>{{beer.description}}</p>
+          </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

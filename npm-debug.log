@@ -1,0 +1,133 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'gulp-minify-css',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 warn package.json brew@1.0.0 No repository field.
+5 warn package.json brew@1.0.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'gulp-minify-css@^0.3.0', null ]
+8 verbose cache add name=undefined spec="gulp-minify-css@^0.3.0" args=["gulp-minify-css@^0.3.0",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'gulp-minify-css@^0.3.0',
+9 verbose parsed url   path: 'gulp-minify-css@^0.3.0',
+9 verbose parsed url   href: 'gulp-minify-css@^0.3.0' }
+10 verbose cache add name="gulp-minify-css" spec="^0.3.0" args=["gulp-minify-css","^0.3.0"]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: '^0.3.0',
+11 verbose parsed url   path: '^0.3.0',
+11 verbose parsed url   href: '^0.3.0' }
+12 verbose addNamed [ 'gulp-minify-css', '^0.3.0' ]
+13 verbose addNamed [ null, '>=0.3.0-0 <0.4.0-0' ]
+14 silly lockFile 97140670-gulp-minify-css-0-3-0 gulp-minify-css@^0.3.0
+15 verbose lock gulp-minify-css@^0.3.0 /Users/devinandrews/.npm/97140670-gulp-minify-css-0-3-0.lock
+16 silly addNameRange { name: 'gulp-minify-css',
+16 silly addNameRange   range: '>=0.3.0-0 <0.4.0-0',
+16 silly addNameRange   hasData: false }
+17 verbose request where is /gulp-minify-css
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id bfcbd2ab20468af9
+20 verbose url raw /gulp-minify-css
+21 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-minify-css' ]
+22 verbose url resolved https://registry.npmjs.org/gulp-minify-css
+23 verbose request where is https://registry.npmjs.org/gulp-minify-css
+24 info trying registry request attempt 1 at 02:26:08
+25 verbose etag "26HF6GUDI3IWXSL7P2HNYZ9N8"
+26 http GET https://registry.npmjs.org/gulp-minify-css
+27 http 200 https://registry.npmjs.org/gulp-minify-css
+28 silly registry.get cb [ 200,
+28 silly registry.get   { date: 'Fri, 30 Jan 2015 07:26:08 GMT',
+28 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly registry.get     etag: '"C4MEGQD9YG8I7DFKK1NJI1J00"',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     'content-length': '32164',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '55',
+28 silly registry.get     'x-served-by': 'cache-iad2127-IAD',
+28 silly registry.get     'x-cache': 'HIT',
+28 silly registry.get     'x-cache-hits': '1',
+28 silly registry.get     'x-timer': 'S1422602768.367318,VS0,VE0',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 silly addNameRange number 2 { name: 'gulp-minify-css',
+29 silly addNameRange   range: '>=0.3.0-0 <0.4.0-0',
+29 silly addNameRange   hasData: true }
+30 silly addNameRange versions [ 'gulp-minify-css',
+30 silly addNameRange   [ '0.0.1',
+30 silly addNameRange     '0.1.0',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.3.1',
+30 silly addNameRange     '0.3.2',
+30 silly addNameRange     '0.3.3',
+30 silly addNameRange     '0.3.4',
+30 silly addNameRange     '0.3.5',
+30 silly addNameRange     '0.3.6',
+30 silly addNameRange     '0.3.7',
+30 silly addNameRange     '0.3.8',
+30 silly addNameRange     '0.3.9',
+30 silly addNameRange     '0.3.10',
+30 silly addNameRange     '0.3.11',
+30 silly addNameRange     '0.3.12',
+30 silly addNameRange     '0.3.13',
+30 silly addNameRange     '0.4.0',
+30 silly addNameRange     '0.4.1',
+30 silly addNameRange     '0.4.2',
+30 silly addNameRange     '0.4.3' ] ]
+31 verbose addNamed [ 'gulp-minify-css', '0.3.13' ]
+32 verbose addNamed [ '0.3.13', '0.3.13' ]
+33 silly lockFile 9038a954-gulp-minify-css-0-3-13 gulp-minify-css@0.3.13
+34 verbose lock gulp-minify-css@0.3.13 /Users/devinandrews/.npm/9038a954-gulp-minify-css-0-3-13.lock
+35 silly lockFile 8781e9f5-y-css-gulp-minify-css-0-3-13-tgz https://registry.npmjs.org/gulp-minify-css/-/gulp-minify-css-0.3.13.tgz
+36 verbose lock https://registry.npmjs.org/gulp-minify-css/-/gulp-minify-css-0.3.13.tgz /Users/devinandrews/.npm/8781e9f5-y-css-gulp-minify-css-0-3-13-tgz.lock
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-minify-css/-/gulp-minify-css-0.3.13.tgz',
+37 verbose addRemoteTarball   'ba813c665422868305383ccd185f239c1e35209b' ]
+38 info retry fetch attempt 1 at 02:26:08
+39 verbose fetch to= /var/folders/yh/w20jcxt550gcfzq5vw9svf4h0000gn/T/npm-61999-SltSPBWv/registry.npmjs.org/gulp-minify-css/-/gulp-minify-css-0.3.13.tgz
+40 http GET https://registry.npmjs.org/gulp-minify-css/-/gulp-minify-css-0.3.13.tgz
+41 http 200 https://registry.npmjs.org/gulp-minify-css/-/gulp-minify-css-0.3.13.tgz
+42 silly lockFile 8781e9f5-y-css-gulp-minify-css-0-3-13-tgz https://registry.npmjs.org/gulp-minify-css/-/gulp-minify-css-0.3.13.tgz
+43 silly lockFile 8781e9f5-y-css-gulp-minify-css-0-3-13-tgz https://registry.npmjs.org/gulp-minify-css/-/gulp-minify-css-0.3.13.tgz
+44 silly lockFile 9038a954-gulp-minify-css-0-3-13 gulp-minify-css@0.3.13
+45 silly lockFile 9038a954-gulp-minify-css-0-3-13 gulp-minify-css@0.3.13
+46 silly lockFile 97140670-gulp-minify-css-0-3-0 gulp-minify-css@^0.3.0
+47 silly lockFile 97140670-gulp-minify-css-0-3-0 gulp-minify-css@^0.3.0
+48 error Error: EACCES, mkdir '/Users/devinandrews/.npm/gulp-minify-css/0.3.13'
+48 error  { [Error: EACCES, mkdir '/Users/devinandrews/.npm/gulp-minify-css/0.3.13']
+48 error   errno: 3,
+48 error   code: 'EACCES',
+48 error   path: '/Users/devinandrews/.npm/gulp-minify-css/0.3.13',
+48 error   parent: 'brew' }
+49 error Please try running this command again as root/Administrator.
+50 error System Darwin 14.0.0
+51 error command "node" "/usr/local/bin/npm" "install" "gulp-minify-css" "--save-dev"
+52 error cwd /Users/devinandrews/projects/brew
+53 error node -v v0.10.35
+54 error npm -v 1.4.28
+55 error path /Users/devinandrews/.npm/gulp-minify-css/0.3.13
+56 error code EACCES
+57 error errno 3
+58 error stack Error: EACCES, mkdir '/Users/devinandrews/.npm/gulp-minify-css/0.3.13'
+59 verbose exit [ 3, true ]
